@@ -34,12 +34,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </li>
         ))}
       </ul>
-      <a
-        href="#contact"
-        className="focus-ring mt-auto pt-8 text-sm font-medium text-neutral-500 transition hover:text-navy"
-      >
-        Documentation available on request
-      </a>
+      {project.document ? (
+        <a
+          href={project.document.href}
+          download
+          aria-label={`${project.document.label} for ${project.title}`}
+          className="focus-ring mt-auto pt-8 text-sm font-semibold text-navy transition hover:text-[#142f59]"
+        >
+          {project.document.label}
+        </a>
+      ) : (
+        <a
+          href="#contact"
+          className="focus-ring mt-auto pt-8 text-sm font-medium text-neutral-500 transition hover:text-navy"
+        >
+          Documentation available on request
+        </a>
+      )}
     </article>
   );
 }

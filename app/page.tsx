@@ -106,8 +106,7 @@ export default function Home() {
                   >
                     Download CV
                   </a>
-                  
-                    href="#projects"
+                  <a`r`n                    href="#projects"
                     style={{
                       fontFamily: "'DM Mono', monospace", fontSize: 12,
                       color: "rgba(255,255,255,0.55)",
@@ -311,3 +310,6 @@ export default function Home() {
     </>
   );
 }
+
+
+

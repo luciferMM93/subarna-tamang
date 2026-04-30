@@ -109,7 +109,38 @@ export default function Home() {
         <div className="flex flex-col gap-3 sm:flex-row">
           
             href={cvPath}
+            download{/* CTAs */}
+        <div className="flex flex-col gap-3 sm:flex-row">
+          
+            href={cvPath}
             download
+            aria-label="Download Subarna Tamang CV as a PDF"
+            style={{
+              fontFamily: "'DM Mono', monospace", fontSize: 12,
+              color: "#080c12", background: "#00ff8c",
+              padding: "11px 24px", letterSpacing: "0.06em",
+              textTransform: "uppercase", borderRadius: 2,
+              display: "inline-flex", alignItems: "center", justifyContent: "center",
+              textDecoration: "none", fontWeight: 500,
+            }}
+          >
+            Download CV
+          </a>
+          
+            href="#projects"
+            style={{
+              fontFamily: "'DM Mono', monospace", fontSize: 12,
+              color: "rgba(255,255,255,0.55)",
+              border: "1px solid rgba(255,255,255,0.18)",
+              padding: "11px 24px", letterSpacing: "0.06em",
+              textTransform: "uppercase", borderRadius: 2,
+              display: "inline-flex", alignItems: "center", justifyContent: "center",
+              textDecoration: "none",
+            }}
+          >
+            View Projects →
+          </a>
+        </div>
             aria-label="Download Subarna Tamang CV as a PDF"
             style={{
               fontFamily: "'DM Mono', monospace", fontSize: 12,

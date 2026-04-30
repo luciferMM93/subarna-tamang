@@ -78,10 +78,10 @@ export type Project = {
   badge: string;
   tags: string[];
   bullets: string[];
-  document?: {
+  documents?: {
     label: string;
     href: string;
-  };
+  }[];
 };
 
 export const projects: Project[] = [
@@ -93,10 +93,16 @@ export const projects: Project[] = [
       "End-to-end risk assessment of cloud-based web app; mapped 5 assets against CIA triad.",
       "Identified 2 critical risks; all 5 inherent risks reduced to Medium or Low via proposed controls."
     ],
-    document: {
-      label: "Download AWS risk artefacts",
-      href: "/AWS_Risk_Artefacts_Pack.docx"
-    }
+    documents: [
+      {
+        label: "Download AWS risk artefacts",
+        href: "/AWS_Risk_Artefacts_Pack.docx"
+      },
+      {
+        label: "Download AWS assessment portfolio",
+        href: "/Cyber_Risk_Assessment_Portfolio_v2.docx"
+      }
+    ]
   },
   {
     title: "Cyber Resilience Strategy",
@@ -105,11 +111,7 @@ export const projects: Project[] = [
     bullets: [
       "Hybrid framework for AG Hotels Group with 6-domain gap analysis across governance, culture, technical controls, incident response, recovery, and alignment.",
       "Prioritised roadmap covering MFA, network segmentation, patch management, and GDPR compliance."
-    ],
-    document: {
-      label: "Download risk assessment portfolio",
-      href: "/Cyber_Risk_Assessment_Portfolio_v2.docx"
-    }
+    ]
   },
   {
     title: "Network Security Lab",

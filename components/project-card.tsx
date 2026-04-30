@@ -34,15 +34,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </li>
         ))}
       </ul>
-      {project.document ? (
-        <a
-          href={project.document.href}
-          download
-          aria-label={`${project.document.label} for ${project.title}`}
-          className="focus-ring mt-auto pt-8 text-sm font-semibold text-navy transition hover:text-[#142f59]"
-        >
-          {project.document.label}
-        </a>
+      {project.documents?.length ? (
+        <div className="mt-auto flex flex-col gap-2 pt-8">
+          {project.documents.map((document) => (
+            <a
+              key={document.href}
+              href={document.href}
+              download
+              aria-label={`${document.label} for ${project.title}`}
+              className="focus-ring text-sm font-semibold text-navy transition hover:text-[#142f59]"
+            >
+              {document.label}
+            </a>
+          ))}
+        </div>
       ) : (
         <a
           href="#contact"

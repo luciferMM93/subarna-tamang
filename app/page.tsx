@@ -1,4 +1,4 @@
-﻿import { ContactSection } from "@/components/contact-section";
+import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { ProjectCard } from "@/components/project-card";
@@ -106,7 +106,8 @@ export default function Home() {
                   >
                     Download CV
                   </a>
-                  <a`r`n                    href="#projects"
+                  <a
+                    href="#projects"
                     style={{
                       fontFamily: "'DM Mono', monospace", fontSize: 12,
                       color: "rgba(255,255,255,0.55)",
